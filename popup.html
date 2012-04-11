@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Pinboard</title>
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<h1>Pinboard</h1><span class="subtitle">Bookmark this page</span>
+		<hr>
+		<form action="" method="get" accept-charset="utf-8">
+			<input type="text" class="span4" name="title" id="inputTitle" placeholder="Insert the title">
+			<input type="text" class="span4" name="url" id="inputUrl" placeholder="URL">
+			<input type="text" class="span4" name="tags" id="inputTags" placeholder="Start typing a tag">
+			<textarea class="span4" name="description" id="inputDescription"></textarea>
+			<label class="checkbox">
+		    <input type="checkbox"> Private link
+		  </label>
+		</form>
+		<button type="submit" id="buttonSubmit" class="btn btn-info pull-right">
+		  	Save to my pinboard
+		</button>
+	</div>
+	<script src="zepto.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="popup.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
