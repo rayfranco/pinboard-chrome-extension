@@ -1,14 +1,19 @@
 {
   "name": "Pinboard",
-  "version": "1.0",
+  "version": "0.1",
   "manifest_version": 2,
   "description": "Let's you bookmark to Pinboard",
+  "icons": {
+    "16": "img/icon16.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
   "browser_action": {
-    "default_icon": "browser.png",
+    "default_icon": "img/browser.png",
     "default_popup": "popup.html"
   },
   "background": {
-    "scripts": ["zepto.js","pinboardApi.js"]
+    "scripts": ["js/zepto.js","js/pinboardApi.js"]
   },
   "permissions": [
     "https://api.pinboard.in/*",

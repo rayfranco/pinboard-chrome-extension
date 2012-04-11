@@ -1,0 +1,51 @@
+* {
+	padding: 0; margin: 0; border: 0;
+}
+
+body {
+	padding: 0;
+}
+
+div#container {
+	width: 350px;
+	padding: 20px;
+	background: -webkit-linear-gradient(top, #feffff 0%,#edf2f4 100%); /* Chrome10+,Safari5.1+ */
+}
+
+h1 {
+	font-family: helvetica, sans-serif;
+	color: #AAA;
+	font-size: 17px;
+	font-weight: normal;
+	display: inline-block;
+	margin-right: 10px;
+}
+h1:before {
+	content: url(../img/icon16.png);
+	margin-right: 10px;
+	position: relative;
+	top: 2px;
+}
+span.subtitle {
+	font-family: helvetica, sans-serif;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+}
+span.subtitle:before {
+	content: "|";
+	color: #eee;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: Arial;
+	margin-right: 8px;
+}
+h1,span.subtitle {
+	text-shadow: 2px 2px 2px #ffffff;
+}
+
+hr {
+	border-top: 1px solid #edf2f4;
+	border-bottom: 1px solid ##feffff;
+	margin: 5px 0 10px;
+}

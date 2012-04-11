@@ -3,20 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Options</title>
-	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/options.css">
 </head>
-<body>
+<body id="options">
 <div class="container">
-	<h1>Pinboard Options</h1>
-	<hr>
-	<section>
-		<form class="vertical">
-			<input type="text" name="login" id="usernameInput" value="" placeholder="Your login">
-			<input type="password" name="password" id="passwordInput" value="" placeholder="Your password">
-		</form>		
-	</section>	
+	<div class="row">
+		<div class="span12">
+			<h1><span class="icon48"></span>Pinboard Options</h1>
+			<hr>
+			<section>
+				<form class="form-horizontal">
+					<fieldset>
+						<div class="control-group">
+							<label class="control-label" for="input01">Username</label>
+							<div class="controls">
+								<input type="text" name="login" id="usernameInput" value="" placeholder="Your login">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="input01">Password</label>
+							<div class="controls">
+								<input type="password" name="password" id="passwordInput" value="" placeholder="Your password">
+							</div>
+						</div>					
+					</fieldset>
+				</form>		
+			</section>			
+		</div>
+	</div>
+	<footer>
+		<div class="row">
+			<div class="span12">
+				<p class="center">This extension is powered by the magic of <a href="http://twitter.github.com/bootstrap" title="Twitter Bootstrap">Twitter Bootstrap</a> and the power of <a href="http://zeptojs.com/" title="Zepto.js">Zepto.js</a> — You can follow me on <a href="http://twitter.com/RayFranco" title="">Twitter</a></p>
+			</div>
+		</div>		
+	</footer>
 </div>
-<script src="zepto.js" type="text/javascript" charset="utf-8" async defer></script>
-<script src="options.js" type="text/javascript" charset="utf-8" async defer></script>
+<a href="https://github.com/RayFranco/pinboard-chrome-extension"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+<script src="js/zepto.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="js/options.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
