@@ -1,0 +1,128 @@
+#timer {
+  display: none;
+}
+#pinboard {
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+a, a:visited {
+  color: #2761B0 !important;
+}
+#banner {
+  background: #265fac !important;
+  /*background: -moz-linear-gradient(top, #2761B0 0%, #265fac 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2761B0), color-stop(100%,#265fac)) !important;*/
+  width: 100% !important;
+  position: fixed;
+  left: 0;
+  padding: 8px 0 6px 0 !important;
+  border-bottom: 1px solid #173967 !important;
+  z-index: 1;
+}
+#banner:after {
+  content: "";
+  background: #EEEEEE; /* old browsers */
+  background: -moz-linear-gradient(top, #ddd 0%, rgba(255,255,255,0) 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ddd), color-stop(100%,rgba(255,255,255,0))); /* webkit */
+  height: 15px;
+  position: absolute;
+  top: 36px;
+  width: 100%;
+}
+#banner #logo {
+  padding: 0 10px;
+}
+#banner #logo span {
+  position: relative;
+  top: -2px;
+  color: rgba(255,255,255,0.5);
+}
+#banner #logo span a {
+  color: rgba(255,255,255,0.5) !important;
+}
+#banner #logo span a:hover {
+  color: rgba(255,255,255,1) !important;
+}
+#banner #pinboard_name {
+  text-transform: lowercase;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+}
+#banner #logo img {
+  display: none;
+}
+#banner #top_menu {
+  padding: 0 10px;
+  color: #2761B0;
+}
+#banner #top_menu a {
+  padding: 3px 6px !important;
+  margin: 0 -2px;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+#banner #top_menu a:last-child {
+  
+}
+#banner #top_menu a:hover {
+  background: rgba(0,0,0,0.3); 
+}
+#banner a {
+  color: #fff !important;
+}
+#main_column, #right_bar {
+  margin-top: 60px;
+}
+#main_column b {
+  font-size: 150% !important;
+}
+#bookmarks .bookmark_title {
+  font-size: 130% !important;
+}
+#bookmarks .bookmark_title:hover {
+  text-decoration: underline !important;
+}
+.tag, .tag:visited {
+  color: #acca88 !important;
+}
+.tag:hover {
+  color: #88b253 !important;
+}
+#bookmarks .when {
+  opacity: 0.5;
+}
+#tag_cloud_header p {
+  background: #e4e8eb;
+  padding: 8px !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+#tag_cloud a {
+  color: #eb5f4e !important;
+}
+#tag_cloud a:hover {
+  text-decoration: underline !important;
+}
+#tag_cloud b {
+  font-size: 130% !important;
+}
+#tag_cloud_header a {
+  color: #2761B0 !important;
+}
+#footer {
+  margin-bottom: 10px;
+}
+.rss_link {
+  color: #fff !important;
+  font-weight: bold;
+  background: #eb5020;
+  padding: 2px 4px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+

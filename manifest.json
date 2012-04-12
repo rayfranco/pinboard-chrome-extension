@@ -12,6 +12,12 @@
     "default_icon": "img/browser.png",
     "default_popup": "popup.html"
   },
+  "content_scripts": [ // TEMP
+    {
+      "matches": ["http://*.pinboard.in/*"],
+      "css": ["css/themes/prettypinboard.css"]
+    }
+  ],
   "background": {
     "scripts": ["js/zepto.js","js/pinboardApi.js"]
   },
