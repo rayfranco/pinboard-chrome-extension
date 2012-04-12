@@ -15,6 +15,7 @@ You can fork it, PR your works, any tweaks, refactors or new features. I'll be v
 # Roadmap#
 
 * Take tags and description in consideration
+* Theme for Pinboard.in support
 * Better authentication handling
 * Tags autocomplete
 * Possibility to syncronize pinboard bookmarks in a dedicated local folder
