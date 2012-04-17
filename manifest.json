@@ -1,8 +1,8 @@
 {
   "name": "Pinboard",
-  "version": "0.1",
+  "version": "0.2",
   "manifest_version": 2,
-  "description": "Let's you bookmark to Pinboard",
+  "description": "Let's you bookmark to your Pinboard and give a new look to Pinboard.in",
   "icons": {
     "16": "img/icon16.png",
     "48": "img/icon48.png",
@@ -14,7 +14,7 @@
   },
   "content_scripts": [ // TEMP
     {
-      "matches": ["http://*.pinboard.in/*"],
+      "matches": ["*://*.pinboard.in/*"],
       "css": ["css/themes/prettypinboard.css"]
     }
   ],

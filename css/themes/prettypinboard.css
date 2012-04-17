@@ -11,8 +11,6 @@ a, a:visited {
 }
 #banner {
   background: #265fac !important;
-  /*background: -moz-linear-gradient(top, #2761B0 0%, #265fac 100%) !important;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2761B0), color-stop(100%,#265fac)) !important;*/
   width: 100% !important;
   position: fixed;
   left: 0;

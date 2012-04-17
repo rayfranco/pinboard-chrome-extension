@@ -13,21 +13,43 @@
 			<h1><span class="icon48"></span>Pinboard Options</h1>
 			<hr>
 			<section>
-				<form class="form-horizontal">
-					<fieldset>
+				<form id="optionsForm" class="form-horizontal">
+					<fieldset id="loginFieldset">
 						<div class="control-group">
-							<label class="control-label" for="input01">Username</label>
+							<label class="control-label" for="usernameInput">Username</label>
 							<div class="controls">
 								<input type="text" name="login" id="usernameInput" value="" placeholder="Your login">
 							</div>
 						</div>
 						<div class="control-group">
-							<label class="control-label" for="input01">Password</label>
+							<label class="control-label" for="passwordInput">Password</label>
 							<div class="controls">
 								<input type="password" name="password" id="passwordInput" value="" placeholder="Your password">
 							</div>
-						</div>					
+						</div>		
 					</fieldset>
+					<fieldset id="themeFieldset">
+						<!-- What should be displayed -->
+						<div class="control-group">
+							<label class="control-label">Theme</label>
+							<ul class="thumbnails">
+								<li class="span2">
+									<a href="#" class="thumbnail active">
+										<img src="css/themes/prettypinboard.png" alt="PrettyPinboard" title="PrettyPinboard">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- What should be really done -->
+						<!-- <select name="theme" id="themeSelect">
+							<option data-thumbnail="" value="theme1">Theme 1</option>
+							<option data-thumbnail="" value="theme2">Theme 2</option>
+							<option data-thumbnail="" value="theme3">Theme 3</option>
+						</select> -->
+					</fieldset>
+					<div class="controls">
+						<input type="submit" value="Save preferences" id="formSubmit" class="btn btn-primary">	
+					</div>	
 				</form>		
 			</section>			
 		</div>
@@ -42,6 +64,7 @@
 </div>
 <a href="https://github.com/RayFranco/pinboard-chrome-extension"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
 <script src="js/zepto.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="js/pinboardApi.js" type="text/javascript" charset="utf-8" async defer></script>
 <script src="js/options.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>

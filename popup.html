@@ -11,12 +11,12 @@
 		<h1>Pinboard</h1><span class="subtitle">Bookmark this page</span>
 		<hr>
 		<form action="" method="get" accept-charset="utf-8">
-			<input type="text" class="span4" name="title" id="inputTitle" placeholder="Insert the title">
-			<input type="text" class="span4" name="url" id="inputUrl" placeholder="URL">
-			<input type="text" class="span4" name="tags" id="inputTags" placeholder="Start typing a tag">
-			<textarea class="span4" name="description" id="inputDescription"></textarea>
+			<input type="text" class="span4" name="title" id="inputTitle" required="required" placeholder="Insert the title">
+			<input type="url" class="span4" name="url" id="inputUrl" required="required" placeholder="URL">
+			<input type="text" class="span4" name="tags" id="inputTags" pattern="([^, ]+){0,100}" placeholder="Separate tags by spaces or commas">
+			<textarea class="span4" name="description" id="inputDescription" placeholder="Enter a description"></textarea>
 			<label class="checkbox">
-		    <input type="checkbox"> Private link
+		    <!-- <input type="checkbox" name="private" id="checkboxPrivate"> Private link -->
 		  </label>
 		</form>
 		<button type="submit" id="buttonSubmit" class="btn btn-info pull-right">

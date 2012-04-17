@@ -15,20 +15,41 @@ $(function(){
 		password: {el: $('#passwordInput'), defaultValue: $('#passwordInput').val()}
 	}
 
+	// Execute on load
 	for (option in options) {
 		if (localStorage["pinboard".camelCaseConcat(option)]) {
 			options[option].el.val(localStorage["pinboard".camelCaseConcat(option)])
 		}
 	}
+	if (!localStorage.pinboardIsAuth || localStorage.pinboardIsAuth != "YES") {
+		$('#loginFieldset').find('div.control-group').removeClass('success').addClass('error');
+	} else {
+		$('#loginFieldset').find('div.control-group').addClass('success').removeClass('error');
+	}
 
-	setInterval(function(){
+	// Events
+	$('#loginFieldset input').on('change',function(e){
+		$('#loginFieldset').find('div.control-group').removeClass('success error');
+	});
+	$('#optionsForm').submit(function(e){
+		$('#formSubmit').addClass('disabled');
+		e.preventDefault();
 		for (option in options) {
 			if (options[option].el.val() !== options[option].defaultValue) {
 				localStorage["pinboard".camelCaseConcat(option)] 
 					= options[option].defaultValue
 					= options[option].el.val();
-				// Should we try to authenticate now ? Maybe if we turn down automatic updates.
 			}
 		}
-	},1000);
+		// Authentication
+		pinboard.authenticate(localStorage.pinboardUsername, localStorage.pinboardPassword, function(data){
+			$('#loginFieldset').find('div.control-group').addClass('success').removeClass('error');
+			$('#formSubmit').removeClass('disabled');
+			localStorage.pinboardIsAuth = 'YES';
+		}, function(xhr, errorType, error) {
+			$('#loginFieldset').find('div.control-group').removeClass('success').addClass('error');
+			$('#formSubmit').removeClass('disabled');
+			localStorage.pinboardIsAuth = 'NO';
+		});
+	});
 });
