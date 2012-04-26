@@ -71,8 +71,18 @@ a, a:visited {
 #banner a {
   color: #fff !important;
 }
-#main_column, #right_bar {
+#main_column, #right_bar, #right_column, #note_right_column, #import_history_table, #profile_left_column, #profile_right_column {
   margin-top: 60px;
+}
+#import_history_table {
+  border: 0 !important;
+}
+#import_history_table caption {
+  border-bottom: 1px solid #aaa;
+  display: table-caption !important;
+  color: #2761b0;
+  height: 18px;
+  text-align: center;
 }
 #main_column b {
   font-size: 150% !important;
